@@ -46,6 +46,26 @@ footer {
   color: black;
 }
 
+/* Div styles */
+
+div.game {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 10px 10px 5px;
+}
+
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container {
+  padding: 10px;
+}
+
 /* Responsive layout - makes the menu and the content sit on top of each other instead of next to each other */
 
 </style>
@@ -71,7 +91,12 @@ footer {
         </ul>
     </nav>
 
-    <img src="courier_map.jpg" style="height:300; height:auto;">
+  <div class="card">
+    <img src="courier_map.jpg" alt="Scadbury town map" style="width:100%">
+    <div class="container">
+      <p>The Night Courier</p>
+    </div>
+  </div>
 
 <footer><p>© 2026 Finlay Logan</p></footer>
 
