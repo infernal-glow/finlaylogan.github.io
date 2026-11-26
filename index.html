@@ -8,17 +8,78 @@ h1   {color: bisque;
         font-family: Verdana, Geneva, Tahoma, sans-serif;}
 h2   {color: bisque;
         font-family: Verdana, Geneva, Tahoma, sans-serif;}
-p    {color: bisque;
+p    {background-color: bisque;
+        color: black;
         font-family: 'Courier New', Courier, monospace;}
+
+/* header */
+header {
+  background-color: #66666600;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: flex;
+}
+
+/* navigation menu */
+nav {
+  flex: 1;
+  background-color: rgb(30, 102, 90);
+  padding: 15px;
+}
+
+/* Style list inside nav menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the footer */
+footer {
+  background-color: bisque;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the menu and the content sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+}
+
 </style>
 </head>
 
 <body>
 
-    <h1>Hi! I'm Finlay!</h1>
-    <h2>Narrative designer, creative producer, educator</h2>
+    <header>
+        <h1>Finlay Logan</h1>
 
-    <p>This is where the rest of my website is going to go.</p>
+    </header>
+    <h1 style="text-align:center;">Hi! I'm Finlay!</h1>
+    <h2 style="text-align:center;">Narrative designer, creative producer, educator</h2>
+
+   <section>
+    <nav>
+        <ul>
+            <li>About Me</li>
+            <li>Games</li>
+            <li>Talks &c</li>
+            <li>Experience</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <img src = "/images/courier_office.png">
+   </section>
+
+<footer><p>© 2026 Finlay Logan</p></footer>
 
 </body>
 </HTML>
